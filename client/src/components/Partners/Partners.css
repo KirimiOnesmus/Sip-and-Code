@@ -1,0 +1,23 @@
+.partners {
+    padding: 10px;
+}
+
+.partner-container {
+    border-top: solid 1px darkgray;
+    border-bottom: solid 1px darkgray;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the slider */
+}
+
+.partner-img {
+    padding: 10px;
+}
+
+.partner-img img {
+    width: auto; /* Adjust to maintain aspect ratio */
+    height: 100px;
+    object-fit: contain; /* Ensure images are fully visible */
+}

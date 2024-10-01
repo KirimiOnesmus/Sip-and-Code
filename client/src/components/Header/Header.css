@@ -1,0 +1,142 @@
+/* General Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 2%;
+    position: relative;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+.right-side {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+/* Links and Button */
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+.btn_btn {
+    padding: 7px 10px;
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hamburger Menu Button */
+.menu{
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+}
+/* Media Queries for Small and Medium Screens */
+@media (max-width: 768px) {
+    .logo {
+        margin: 0 -90px;
+    }
+
+    .right-side {
+        display: none;
+
+        
+    }
+    .menu{
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        color: #000;
+        border-radius: 50%;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 1000;
+       font-weight: bold;
+    
+    }
+    .menu:hover{
+        background-color: #2424243d;
+    }
+  
+    .active{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        /* background: #000; */
+        width: 50vh; /* Full viewport width */
+        height: 50vh; /* Full viewport height */
+        background-color: rgba(105, 104, 104, 0.644);
+        z-index: 1000;
+        right: 20px;
+        top: 70px;
+        
+    }
+ 
+    .links {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+        padding-top:30px ;
+        
+    }
+  
+    .links li:hover a{
+    border-bottom: #000 solid 1px;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 700;
+    color: #ff0000be;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px;
+     
+    }
+    .btn .btn_btn{
+        width: 45vh;
+        font-size: 20px;
+        background-color: #333;
+
+    }
+    .btn .btn_btn:hover{
+        background-color: green;
+    }
+    .header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        /* Adjust further if needed */
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        /* Adjust further if needed */
+    }
+}
